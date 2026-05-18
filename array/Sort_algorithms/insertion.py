@@ -1,16 +1,12 @@
-numbers = [23, 6, 7, 8, 1, 98, 34]
+my_array = [64, 34, 25, 12, 22, 11, 90, 5]
 
-n = len(numbers)
-
-for i in range(1, n):
+n = len(my_array)
+for i in range(1,n):
     insert_index = i
-    current_value = numbers.pop(i)
-    
+    current_value = my_array.pop(i)
     for j in range(i-1, -1, -1):
-        if numbers[j] > current_value:
+        if my_array[j] > current_value:
             insert_index = j
-            
-    numbers.insert(insert_index, current_value)
-    
+    my_array.insert(insert_index, current_value)
 
-print("Sorted index:", numbers)    
+print("Sorted array:", my_array)
