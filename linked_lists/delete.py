@@ -12,10 +12,24 @@ def tranverseAndPrint(head):
         print(currentNode.data, end="->")
         currentNode = currentNode.next        
     
-    print("null")    
+    print("null")  
     
+
+def deleteSpecificNode(head, deleteNode):
+     if head == deleteNode:
+         return head.next    
     
+     currentNode = head
+     
+     while currentNode.next and currentNode.next != deleteNode:
+         currentNode = currentNode.next
+     if currentNode.next is None:
+         return head
+     currentNode.next = currentNode.next.next
+     return head
+             
     
+      
     
     
  
@@ -31,4 +45,10 @@ node3.next = node4
 node4.next = node5
    
 print("Before we delete")
-tranverseAndPrint(node1)    
+tranverseAndPrint(node1) 
+
+node1 =deleteSpecificNode(node1, node4)
+
+
+print("\nAfter we delete:")
+tranverseAndPrint(node1)   
