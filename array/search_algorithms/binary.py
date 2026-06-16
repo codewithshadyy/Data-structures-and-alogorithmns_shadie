@@ -31,7 +31,30 @@
 #     print("Value",find,"found at index", result)
 # else:
 #     print("Target not found in array.")           
-def locate_card(cards, query):
-    pass        
+      
 
-  
+def locate_card(cards, query):
+    pos = 0
+    while True:
+        if cards[pos] == query:
+            
+             return pos
+        pos += 1
+        
+        if pos == len(cards):
+            
+           return -1
+        
+
+{
+    'input': {'cards': [13, 11, 10, 7, 4, 3, 1, 0], 
+         'query': 7
+         }, 
+        'output': 3
+        }    
+test = []
+result = locate_card(test['input']['cards'], test['input']['query'])
+result == output 
+    
+        
+              
