@@ -34,11 +34,43 @@ None Type:	NoneType
 
 """  
 
-import random
+# import random
 
-def showRandom():
-    x = float(random.randrange(1, 10))
-    print(x)
+# def showRandom():
+#     x = float(random.randrange(1, 10))
+#     print(x)
     
-showRandom()    
+# showRandom()    
+
+"""""
+Python Strings
+"""
+
+name = "kipkoech"
+
+# for n in name:
+#     print(n)
+
+# if "m" in  name:
+#     print("Yoh i am present")
+    
+# else:
+#     print("i am absent") 
+
+
+"""""
+Python List
+""" 
+
+cars = ["Benz", "Audi", "BMW"]
+
+"""""
+List Actions
+access = cars[index]
+adding to list = cars.append(), insert(), extends()
+change values in list = cars[0] = "Volvo"  or cars.insert(index, item)
+remove values = cars.remove(), pop(), del cars[index]
+"""
+ 
+
     
