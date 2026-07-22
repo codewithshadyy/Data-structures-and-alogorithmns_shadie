@@ -46,7 +46,7 @@ None Type:	NoneType
 Python Strings
 """
 
-name = "kipkoech"
+# name = "kipkoech"
 
 # for n in name:
 #     print(n)
@@ -62,7 +62,7 @@ name = "kipkoech"
 Python List
 """ 
 
-cars = ["Benz", "Audi", "BMW"]
+# cars = ["Benz", "Audi", "BMW"]
 
 """""
 List Actions
@@ -71,6 +71,33 @@ adding to list = cars.append(), insert(), extends()
 change values in list = cars[0] = "Volvo"  or cars.insert(index, item)
 remove values = cars.remove(), pop(), del cars[index]
 """
+
+import json
+from deep_translator import GoogleTranslator
  
+client = {
+     "name":"kipkoech",
+     "age":56,
+     "children":("superdad", "shadie"),
+     "skills":[
+         "Javacript", "python", "MongoDB", "postgressql"
+     ],
+     
+ }
+
+data = json.dumps(client, indent=4)
+
+translated_data = GoogleTranslator(
+    source="en",
+    target="ar"
+).translate(data)
+
+print(translated_data)
+
+# with open("client.json", "w") as file:
+#     json.dump(data, file, indent=4)
+
+
+
 
     
