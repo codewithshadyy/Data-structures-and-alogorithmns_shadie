@@ -147,82 +147,100 @@ remove values = cars.remove(), pop(), del cars[index]
 
 # inheritance
 
-class Animal:
-    def __init__(self, name, sound):
-        self.name = name
-        self.sound= sound
+# class Animal:
+#     def __init__(self, name, sound):
+#         self.name = name
+#         self.sound= sound
         
-    def make_sound(self):
-        print(f"{self.name} {self.sound}")   
+#     def make_sound(self):
+#         print(f"{self.name} {self.sound}")   
         
-class Dog(Animal):
-    def __init__(self, name, sound):
-        super().__init__(name, sound) 
+# class Dog(Animal):
+#     def __init__(self, name, sound):
+#         super().__init__(name, sound) 
         
-d1 = Dog("Jimmy", "barks")  
-d1.make_sound()   
+# d1 = Dog("Jimmy", "barks")  
+# d1.make_sound()   
 
 
-#polymorphism
+# #polymorphism
 
-""""
-The word "polymorphism" means "many forms", 
-and in programming it refers to methods/functions/operators 
-with the same name that can be executed on many objects or classes.
-"""
+# """"
+# The word "polymorphism" means "many forms", 
+# and in programming it refers to methods/functions/operators 
+# with the same name that can be executed on many objects or classes.
+# """
 
-class Vehicle:
-    def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
-    def move(self):
-        print("Drive")    
-
-# class Plane:
+# class Vehicle:
 #     def __init__(self, brand, model):
 #         self.brand = brand
 #         self.model = model
 #     def move(self):
-#         print("Flys")  
+#         print("Drive")    
+
+# # class Plane:
+# #     def __init__(self, brand, model):
+# #         self.brand = brand
+# #         self.model = model
+# #     def move(self):
+# #         print("Flys")  
         
-# class Boat:
-#     def __init__(self, brand, model):
-#         self.brand = brand
-#         self.model = model
-#     def move(self):
-#         print("Sails")  
+# # class Boat:
+# #     def __init__(self, brand, model):
+# #         self.brand = brand
+# #         self.model = model
+# #     def move(self):
+# #         print("Sails")  
         
+# # car1 = Car("Benz", "GLE")
+# # boat1 = Boat("Ibiza", "Touring 20")
+# # plane1 = Plane("Boeing", "747")  
+
+
+# # for x in (car1, boat1, plane1):
+# #     x.move()              
+
+# class Car(Vehicle):
+#   pass
+
+# class Boat(Vehicle):
+#   def move(self):
+#     print("Sail!")
+
+# class Plane(Vehicle):
+#   def move(self):
+#     print("Fly!")
+    
+    
+    
 # car1 = Car("Benz", "GLE")
 # boat1 = Boat("Ibiza", "Touring 20")
 # plane1 = Plane("Boeing", "747")  
 
 
 # for x in (car1, boat1, plane1):
-#     x.move()              
-
-class Car(Vehicle):
-  pass
-
-class Boat(Vehicle):
-  def move(self):
-    print("Sail!")
-
-class Plane(Vehicle):
-  def move(self):
-    print("Fly!")
-    
-    
-    
-car1 = Car("Benz", "GLE")
-boat1 = Boat("Ibiza", "Touring 20")
-plane1 = Plane("Boeing", "747")  
+#      print(x.brand)
+#      print(x.model)
+#      x.move()    
 
 
-for x in (car1, boat1, plane1):
-     print(x.brand)
-     print(x.model)
-     x.move()    
+# polymorphism
 
+# class Person:
+#     def __init__(self, name, age):
+        
+#         self.name = name
+#         self.__age = age
+        
+        
+      
+        
+        
+          
+
+# p1 = Person("james", 51)
+
+# print(p1.__age)
 
 
 
