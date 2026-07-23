@@ -244,4 +244,31 @@ remove values = cars.remove(), pop(), del cars[index]
 
 
 
+""""
+Python file handling
+"""
+
+# file = open("client.json")
+
+# print(file.readline())
+
+# file.close()
+# import json
+# data = {
+#     "name":"shadiee",
+# }
+
+
+
+
+
+# with open("client.json", "+a") as file:
+    
+#     file.write(data)
+    
+      
+    
+   
+
+
     
