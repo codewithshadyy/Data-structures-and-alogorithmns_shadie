@@ -1,9 +1,13 @@
 
 numbers = [12, 67, 83, 7, 89]
 
-smallest = numbers[0]
+# smallest = numbers[0]
 
-for currentNumber in numbers:
-    if currentNumber < smallest:
-        smallest = currentNumber
-print("Smallest:",smallest)
+# for currentNumber in numbers:
+#     if currentNumber < smallest:
+#         smallest = currentNumber
+# print("Smallest:",smallest)
+
+
+for i  in range(10):
+    print(i)
