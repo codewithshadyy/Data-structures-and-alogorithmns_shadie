@@ -9,5 +9,5 @@ for currentNumber in numbers:
 print("Smallest:",smallest)
 
 
-for i  in range(10):
-    print(i)
+for i  in range(len(numbers)):
+    print(numbers[i])
