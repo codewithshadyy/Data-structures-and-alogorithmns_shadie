@@ -24,6 +24,6 @@ class LinkedList:
         while current.next:
             current = current.next
         current.next = node    
-    def delete(self, data):
+    
         
                             
