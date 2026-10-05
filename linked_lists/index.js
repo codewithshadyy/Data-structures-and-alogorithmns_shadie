@@ -64,6 +64,23 @@ delete(data){
 }
 
 
+
+// serach:find the first ocucrence of node with a given data
+
+search(data){
+    let current = this.head
+
+while(current !== null){
+    if(current.data === data){
+        return true
+    }
+current = current.next
+
+}
+return false
+}
+
+
 }
 
 const list = new LinkedList()
@@ -77,6 +94,9 @@ list.append(71)
 
 list.prepend("Layla celine")
 list.delete(5)
+list.search()
+
+console.log(list.search("Layla celine"))
 
 console.log(list)
 
