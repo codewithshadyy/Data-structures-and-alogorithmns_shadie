@@ -13,22 +13,38 @@ class LinkedList {
         this.head = head
         
     }
+    
+    // inseriting new node ath the end of the linked lIst
+  append(data){
+    let newNode = new Node(data)
+    if(!this.head){
+        this.head = newNode
+    }else{
+        let current = this.head
+
+        while(current.next !== null){
+            current = current.next
+
+        }
+
+        current.next = newNode
+    }
+  }
 }
 
-let node1 = new Node(7)
-let node2 = new Node(10)
-let node3 = new Node(120)
-let node4 = new Node(568)
+const list = new LinkedList()
+
+list.append(5)
+list.append(6)
+list.append(45)
+list.append(89)
+list.append(71)
 
 
 
-node1.next = node2
-node2.next = node3
-node3.next = node4
-
-let list = new LinkedList(node3)
 
 
 
-console.log(list.head.next.data)
+
+
 
