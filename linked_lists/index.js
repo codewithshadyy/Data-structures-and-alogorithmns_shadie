@@ -81,6 +81,19 @@ return false
 }
 
 
+print(data){
+    let current =this.head
+    const elements = []
+
+    while(current !==   null){
+        elements.push(current.data)
+
+
+        current = current.next
+    }
+    console.log(elements.join("->"))
+}
+
 }
 
 const list = new LinkedList()
@@ -99,6 +112,7 @@ list.search()
 console.log(list.search("Layla celine"))
 
 console.log(list)
+list.print()
 
 
 
