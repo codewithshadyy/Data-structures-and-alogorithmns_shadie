@@ -30,6 +30,19 @@ class LinkedList {
         current.next = newNode
     }
   }
+
+
+//   inserting node at the beginning of the linked lisst
+
+prepend(data){
+    let newNode = new Node(data)
+    newNode.next = this.head
+    this.head = newNode
+}
+
+
+
+
 }
 
 const list = new LinkedList()
@@ -40,6 +53,9 @@ list.append(45)
 list.append(89)
 list.append(71)
 
+list.prepend("Layla celine")
+
+console.log(list)
 
 
 
