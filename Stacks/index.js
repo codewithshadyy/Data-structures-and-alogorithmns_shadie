@@ -25,6 +25,17 @@ class Stack{
         return this.items[this.items.length-1]
     }
 
+    search(element){
+        if(!this.items.includes(element)){
+            return `Oops ${element} does not exists`
+        }
+        else {
+
+             return `Great ${element} found `
+        }
+       
+    }
+
 
     // checking whether the stack is empty
     isEmpty(){
@@ -57,7 +68,7 @@ stacks.copy(list)
 stacks.pop()
 
 
-
+console.log(stacks.search("shadrack"))
 console.log(stacks)
 console.log(stacks.peek())
 console.log(stacks.size())
