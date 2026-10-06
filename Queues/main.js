@@ -21,11 +21,28 @@ class Queue{
             this.last = newNode
             
         }else{
-            this.first.next = newNode
+            this.last.next = newNode
             this.last = newNode
         }
         this.length++
-        return newNode
+        return this
+    }
+
+
+    dequeue(){
+
+        if(!this.first){
+            return "oop the the queue is empty"
+        }
+
+        if(this.first ==- this.last){
+            this.last = null
+        }
+
+        const hodlingPointer =this.first
+        this.first = this.first.next
+        this.length--
+        return hodlingPointer.value
     }
 }
 
