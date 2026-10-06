@@ -44,6 +44,10 @@ class Queue{
         this.length--
         return hodlingPointer.value
     }
+
+    peek(){
+        return this.length
+    }
 }
 
 
@@ -54,4 +58,7 @@ queue.enqueue("kipkech")
 queue.enqueue(75)
 queue.enqueue(10)
 
+queue.dequeue()
+
 console.log(queue)
+console.log(queue.peek())
