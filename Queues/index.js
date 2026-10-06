@@ -28,7 +28,7 @@ dequeue(){
 peek(){
     if(this.isEmpty) return "Opps no elements"
 
-    return this.head
+    return this.items[this.head]
 }
 
 size(){
