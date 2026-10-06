@@ -25,6 +25,16 @@ dequeue(){
 }
 
 
+size(){
+    if(this.isEmpty){
+        return "OOPs the Queuue is empty"
+    }
+
+    return this.tail - this.head
+}
+
+
+
 
 
    get isEmpty(){
@@ -43,3 +53,4 @@ queue.enqueue("kimani")
 
 console.log(queue)
 queue.dequeue()
+console.log(queue.size())
