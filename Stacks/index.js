@@ -7,6 +7,10 @@ class Stack{
         this.items.push(element)
     }
 
+    copy(elements){
+        this.items.push(...elements)
+    }
+
     // removing the last element from a stack
 
     pop(){
@@ -40,11 +44,16 @@ class Stack{
 
 const stacks = new Stack()
 
+const list = ["shadie", "shee", "shadrack", "wanjiru"]
+
+
+
 
 stacks.push(45)
 stacks.push(67)
 stacks.push(90)
 stacks.push(120)
+stacks.copy(list)
 stacks.pop()
 
 
