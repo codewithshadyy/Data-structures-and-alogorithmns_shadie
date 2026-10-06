@@ -19,11 +19,17 @@ dequeue(){
         return "OOps no items in the queue"
     }
     const item = this.items.head
-    delete this.items.head
+    delete this.items[this.head]
     this.head++
     return item
 }
 
+
+peek(){
+    if(this.isEmpty) return "Opps no elements"
+
+    return this.head
+}
 
 size(){
     if(this.isEmpty){
@@ -54,3 +60,4 @@ queue.enqueue("kimani")
 console.log(queue)
 queue.dequeue()
 console.log(queue.size())
+console.log(queue.peek())
