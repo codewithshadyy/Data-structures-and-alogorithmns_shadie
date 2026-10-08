@@ -12,9 +12,11 @@ class Array {
 
     splice(index,count){
         this.items.splice(3,0)
+        
     }
     unshift(item){
         this.items.unshift(item)
+        this.items[0] = item
     }
 
 
@@ -30,7 +32,7 @@ class Array {
         if(!this.items.includes(item)){
             return `Ooops ${item} does not exist`
         } else{
-            return `Great ${item} found at ${i}`
+            return `Great ${item} found at ${this.items[item]}`
         }
     }
 
