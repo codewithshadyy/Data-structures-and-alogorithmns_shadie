@@ -24,6 +24,18 @@ class Array {
         })
     }
 
+    linearSearch(item){
+
+        for(let i =0 ;i <= this.items.length; i++){
+        if(!this.items.includes(item)){
+            return `Ooops ${item} does not exist`
+        } else{
+            return `Great ${item} found at ${i}`
+        }
+    }
+
+    }
+
     
 }
 
@@ -39,6 +51,7 @@ array.unshift(45)
 
 
 
+console.log(array.linearSearch(56))
 
 array.splice()
 array.print()
