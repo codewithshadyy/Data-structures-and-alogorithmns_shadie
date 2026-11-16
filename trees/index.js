@@ -86,5 +86,8 @@ const mom = family.insert(45)
 const sis = family.insert(23)
 const me = family.insert(40)
 
+const sisR = sis.insert(12)
+const sisl = sis.insert(8)
+
 console.log(family)
-console.log(mom)
+// console.log(sis)
